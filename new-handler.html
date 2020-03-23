@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Meyer reset -->
+		<link
+			rel="stylesheet"
+			href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+		/>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="./css/all.min.css" />
+		<link rel="stylesheet" href="./css/fontawesome.min.css" />
+
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- My Styles -->
+		<link rel="stylesheet" href="./css/style.min.css" />
+
+		<title>Afrovine STC</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="logo">
+				<img src="./img/logo-crop.png" alt="Afrovine" />
+			</div>
+
+			<div class="find">
+				<!-- Sort -->
+				<dir class="sort">
+					<select class="fa" name="Sort" id="sort">
+						<option value="none" hidden>&#xf338; &#xf338; Sort by</option>
+						<option class="fa">Hi, &#xf303; </option>
+						<option class="fa">you, &#xf303; </option>
+						<option class="fa">Hey! come here. </option>
+					</select>
+				</dir>
+				<!-- Search -->
+				<div class="search">
+					<input
+						type="text"
+						name="q"
+						class="search-box"
+						placeholder="Search Conent"
+					/>
+					<button type="submit" class="search-btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+			</div>
+
+			<!-- Tabs -->
+			<div class="menu-btn">
+				<span class="menu-btn__burger"></span>
+			</div>
+			<nav class="nav">
+				<ul class="menu-nav">
+					<li class="menu-nav__item active">
+						<a class="menu-nav__link" href="#">Orders</a>
+					</li>
+					<li class="menu-nav__item">
+						<a class="menu-nav__link" href="#">Handlers</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--  Side Nav -->
+		<!-- <nav class="side-nav">
+			<ul>
+				<li class="nav-orders"><a href="#">Orders</a></li>
+				<li class="nav-items"><a href="#">items</a></li>
+				<li class="nav-item"><a href="#">item details</a></li>
+			</ul>
+		</nav> -->
+
+		<main>
+			<section class="new-handler">
+				<h2 class="header-2">Create New Handler</h2>
+
+				<form action="#">
+					<div class="profile-img">
+						<input type="file" id="avatar" accept="image/*" hidden="hidden" />
+
+						<div class="preview-img">
+							<img src="" alt="preview image" class="selected-img" />
+						</div>
+						<button type="button" id="btn-pics">
+							<i class="fas fa-plus"></i>
+						</button>
+					</div>
+
+					<div class="handler-info">
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Firstname Lastname"
+							required
+						/>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Email"
+							required
+						/>
+						<input
+							type="tel"
+							id="tel"
+							name="tel"
+							placeholder="Phone"
+							required
+						/>
+
+						<select name="role" id="role" class="role">
+							<option value="">Choose Role</option>
+							<option value="scheduler">Scheduler</option>
+							<option value="runner">Runner</option>
+							<option value="tailor">Tailor</option>
+							<option value="manager">manager</option>
+						</select>
+					</div>
+
+					<div class="handler-address">
+						<input
+							type="text"
+							id="street"
+							name="street"
+							placeholder="Street"
+							required
+						/>
+						<input
+							type="text"
+							id="Apt#"
+							name="Apt#"
+							placeholder="Apt#"
+							required
+						/>
+						<input
+							type="text"
+							id="city"
+							name="city"
+							placeholder="City"
+							required
+						/>
+						<input
+							type="text"
+							id="state"
+							name="state"
+							placeholder="State"
+							required
+						/>
+						<input type="text" id="zip" name="zip" placeholder="Zip" required />
+					</div>
+
+					<input type="submit" />
+				</form>
+			</section>
+		</main>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
